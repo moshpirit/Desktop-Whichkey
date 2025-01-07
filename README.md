@@ -21,7 +21,7 @@ set $km exec killall python ~/.config/i3/scripts/desktop-whichkey.py,
 set $mode_apps  Applications
 bindsym $mod+a mode "$mode_apps", exec $wkd apps &
 mode "$mode_apps" {
-    bindsym k exec $kme kate, mode "default"2222222222222222
+    bindsym k exec $kme kate, mode "default"
     bindsym t exec $kme thunderbird, mode "default"
     bindsym u exec $kme thunar, mode "default"
     # […]
