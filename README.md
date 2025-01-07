@@ -7,7 +7,9 @@ The issue with key binds is that sometimes there's many and we can forget what k
 
 ## Instructions
 
-To use this script, you need to create a json with your keybinds (I left mine as an example). And to use it you just need to `python desktop-whichkey.py mode` to activate this; but the goal is to integrate it with our desktop. For i3wm (and Swaymm):
+To use this script, you need to create a json with your keybinds (I left mine as an example). And to use it you just need to `python desktop-whichkey.py mode` to activate this; but the goal is to integrate it with our desktop. 
+
+The program just shows you the menu in your `keybinds.json` file, so in order to execute each program we need to call this menu, then kill it and execute whatever we want or cancel it going back to the "default" mode. For i3wm (and Swaymm):
 
 ```
 # Whichkey for i3 using python (desktop-whichkey.py mode)
@@ -31,6 +33,6 @@ mode "$mode_apps" {
 
 ![Captura de pantalla_20250107_105419](https://github.com/user-attachments/assets/95a0e290-0658-4a67-8b1d-317e0c3085b0)
 
-The program shows you the menu, so in order to execute each program we call this reminder menu, we can kill it and execute whatever we want or cancel it going back to the "default" mode.
+
 
 Remember that you don't need to add all your modes to the `keybinds.json` that this script reads. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file. Also, remember that we can use an AI to automate this process (if you want to use any).
