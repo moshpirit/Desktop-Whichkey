@@ -3,13 +3,13 @@ This is a menu that provides different options for your desktop shortcuts, as [w
 
 This is originally designed for my [i3wm](https://i3wm.org/) deskop, that works very well using [modes](https://i3wm.org/docs/userguide.html#binding_modes), allowing users to have a wider range of key bind options.
 
-The issue with key binds is that sometimes there's many and we can forget what key bind we assigned to some especific rofi menu that we did 3 months ago. Of course we can have a [Rofi menu with our shortcuts](https://github.com/Zeioth/rofi-shortcuts), but this way is faster.
+The issue with key binds is that sometimes there's many and we can forget what key bind we assigned to some especific rofi menu that we did 3 months ago or when we have many keybinds. Of course we can have a [Rofi menu with our shortcuts](https://github.com/Zeioth/rofi-shortcuts), but this way is faster.
 
 ## Instructions
 
-To use this script, you need to create a json with your keybinds (I left mine as an example). And to use it you just need to `python desktop-whichkey.py mode` to activate this; but the goal is to integrate it with our desktop. 
+This script reads a `keybinds.json` with your keybinds (I left mine as an example, you can automate this if you want). To use it you just need to `python desktop-whichkey.py mode` to activate this; but works better if you integrate it with your desktop:
 
-The program just shows you the menu in your `keybinds.json` file, so in order to execute each program we need to call this menu, then kill it and execute whatever we want or cancel it going back to the "default" mode. For i3wm (and Swaymm):
+**For i3wm**: when executing a program with modes, we need to first, activate the mode (let's say `mod+a` for applications mode), then press the keybind associated with the program we want (`f` for Firefox). To include the menu in between, we need to call it when opening the mode (in this case `applications mode`), and once we know what we want, kill the menu and exectute the program (in this example, Firefox).
 
 ```
 # Whichkey for i3 using python (desktop-whichkey.py mode)
@@ -21,7 +21,7 @@ set $km exec killall python ~/.config/i3/scripts/desktop-whichkey.py,
 set $mode_apps  Applications
 bindsym $mod+a mode "$mode_apps", exec $wkd apps &
 mode "$mode_apps" {
-    bindsym k exec $kme kate, mode "default"
+    bindsym k exec $kme kate, mode "default"2222222222222222
     bindsym t exec $kme thunderbird, mode "default"
     bindsym u exec $kme thunar, mode "default"
     # […]
@@ -35,4 +35,6 @@ mode "$mode_apps" {
 
 
 
-Remember that you don't need to add all your modes to the `keybinds.json` that this script reads. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file. Also, remember that we can use an AI to automate this process (if you want to use any).
+Remember that you don't need to add all your modes to the `keybinds.json`, just the ones you are going to use. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file.
+
+I don't consider myself a developer, this is just a script that I made for myself and that I wanted to share, so don't expect many improvements.
