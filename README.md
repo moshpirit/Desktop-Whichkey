@@ -33,4 +33,4 @@ mode "$mode_apps" {
 
 The program shows you the menu, so in order to execute each program we call this reminder menu, we can kill it and execute whatever we want or cancel it going back to the "default" mode.
 
-Remember that you don't need to add all your modes to the `keybinds.json` that this script reads. For example, I have a mode to move between the workspaces using the home row of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file. Also, remember that we can use an AI to automate this process (if you want to use any).
+Remember that you don't need to add all your modes to the `keybinds.json` that this script reads. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file. Also, remember that we can use an AI to automate this process (if you want to use any).
