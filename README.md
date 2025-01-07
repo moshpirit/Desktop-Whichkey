@@ -35,6 +35,6 @@ mode "$mode_apps" {
 
 
 
-Remember that you don't need to add all your modes to the `keybinds.json`, just the ones you are going to use. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file.
+Remember that you don't need to add all your modes to the `keybinds.json`, just the ones you are going to use. For example, I have a mode to [move between the workspaces using the home row](https://github.com/i3/i3/discussions/6351) of my split keyboard because is more comfortable for me to use, but I don't need a menu to show me what key to press, so I don't need to include this mode into the json file. I do have one for not so much used layouts though.
 
 I don't consider myself a developer, this is just a script that I made for myself and that I wanted to share, so don't expect many improvements.
