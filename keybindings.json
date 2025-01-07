@@ -1,0 +1,56 @@
+{
+  "apps": {
+    "mode": " Applications",
+    "bindings": {
+      "k": "[k]ate",
+      "t": "[t]hunderbird",
+      "u": "th[u]nar",
+      "x": "tmu[x]",
+      "y": "[y]azi",
+      "v": "[v]ial",
+      "e": "t[e]legram",
+      "a": "[a]utofirma",
+      "n": "[n]itrogen",
+      "d": "[d]iscord",
+      "w": "[w]ebcord",
+      "m": "ne[m]o",
+      "f": "[f]irefox",
+      "g": "chat[g]pt",
+      "o": "[o]bsidian",
+      "p": "logse[q]",
+      "s": "[s]crot",
+      "c": "LO-[c]alc"
+    }
+  },
+  "rofi": {
+    "mode": "󱐀 Rofi",
+    "bindings": {
+      "i": "emoj[i]",
+      "f": "[f]iles",
+      "c": "[c]alculator",
+      "n": "nerd-[f]onts",
+      "p": "[p]rint-screen",
+      "s": "[s]hortcuts"
+    }
+  },
+    "print": {
+    "mode": " Screenshot",
+    "bindings": {
+      "n": "[n]ormal",
+      "r": "[r]egion",
+      "m": "[m]onitor",
+      "a/w/v": "[a]ctive-[w]indow",
+      "f": "[f]ullscreen"
+    }
+  },
+    "layout": {
+    "mode": " Layout",
+    "bindings": {
+      "v": "[v]-split",
+      "h": "[h]-split",
+      "x": "[x]fullscreen",
+      "f": "[f]loating",
+      "p": "[p]arent-focus"
+    }
+  }
+}
